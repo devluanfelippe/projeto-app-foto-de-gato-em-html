@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cat photo app</title> <!--esse e meu titulo da borda principal-->
+</head>
+    <body>
+        <main> <!-- (inicio da tag main)  a tag main serve para identifcar a seção principal da página-->
+                                           
+            <h1>Cat Photo app</h1> <!--aqui fica meu titulo principal-->
+
+                <section> <!--(abertura da primeira sessão) a tag section serve para separar os demais elementos-->
+
+                    <h2>Cat Photos</h2> <!--aqui ficará o texto h2-->
+                    <!--TODO: Add link to cat photos-->
+
+                    <p>see more <a href="https://freecatphotoapp.com" target="_blank">cat photos</a> in your gallery</p> <!--meu texto, onde tenho um texto link ( cat photos)-->
+
+                    <a href="https://freecatphotoapp.com"> <!--aqui eu conseguir transformar a imagem em um link usando a tag de ancora e inserindo o link em questão-->
+                        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back.">
+                    </a>
+                    
+                    
+                </section> <!--fechamento da primeira sessão de elementos-->
+
+
+        <section> <!-- abertura da segunda sessão de elementos-->
+            <h2>Cat Lists</h2>
+            <h3>Things cats love: </h3>
+            <ul>
+                <li>cat nip</li>
+                <li>laser pointers</li>
+                <li>lasagna</li>
+            </ul> <!-- elementos de order não ordenada-->
+            <figure>
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+            <figcaption>Cats <em>love</em> lasagna</figcaption> <!--a tag figcaption é usada para adicionar legenda para descrever a imagem contida dentro do elemento-->
+            </figure>                                           <!--a tag EM enfatiza a palavra nesse caso a palavra cats ficou diferente -->
+            
+            <h3>Top 3 things cats hate:</h3>
+            <ol> <!--a tag ol faz com as ordens de lista não ordenadas sejam numeradas exemplo (1,2,3)-->
+                <li>flea treatment</li>
+                <li>thunder</li>
+                <li>other cats</li>
+            </ol>
+        <figure>
+            <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg">
+            <figcaption>Cats <strong>hate</strong> other cats.</figcaption> <!-- o elemento strong e usado para indicar que algum texto e de grande importancia-->
+        </figure>
+
+        </section> <!--fechamento da segunda sessão de elementos-->
+                
+
+        <section>
+            <h2>cat form</h2>
+            <form action="https://freecatphotoapp.com/submit-cat-photo">
+                <fieldset>
+                    <legend>Is your cat an indoor or outdoor cat?</legend>
+                    <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+                    <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+                </fieldset>
+
+                    <fieldset>
+                        <legend>What's your cat's personality?</legend>  
+                        <input type="checkbox" id="loving" name="personality" value="loving" checked> <label for="loving">Loving</label>
+                        <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">lazy</label>
+                        <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic">energetic</label>
+                    </fieldset>
+
+
+                <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+                <button type="submit">submit</button>
+            </form>
+        </section>
+       </main>
+    <footer>
+        <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+    </footer>
+</body>
+</html>
